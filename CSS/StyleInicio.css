@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --four-bg-color: #4C0027;
+    --three-bg-color: #570530;
+    --two-bg-color: #750550;
+    --one-bg-color: #980F5A;
+    --five-bg-color: #B4A5A5;
+
+    --four-btn-hover-color: #581a3a;
+    --three-btn-hover-color: #820c49;
+    --two-btn-hover-color: #8e0a62;
+    --one-btn-hover-color: #b01b6d;
+    --five-btn-hover-color: #ccbfbf;
+}
+
+* {
+    box-sizing: border-box;
+    /* Si empieza a fallar quitar el box-sizing */
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    /* background: #333; */
+}
+
+section{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    transition: all .5s;     
+}
+
+section:hover{
+    flex:2;
+}
+
+section h1{
+    font-size: 4rem;
+    color:#fff;
+    padding: 12px 32px;
+    white-space: nowrap;
+    position: absolute;
+    left:auto;
+    top: 25%;
+}
+
+section .btn{
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: #fff solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 15rem;
+    padding: 1.5rem;
+
+    text-decoration: none;
+    display: flex;
+    top: 40%;
+    left: auto;
+
+    /* position: absolute;  */
+    /* La position absolute creo que es de ahuevo */
+}
+
+/* Esto es para que se ilumine el boton, NO eliminar xd*/
+.split.one .btn:hover {
+    background-color: var(--one-btn-hover-color);
+    border-color: var(--one-btn-hover-color);
+}
+
+.split.two .btn:hover {
+    background-color: var(--two-btn-hover-color);
+    border-color: var(--two-btn-hover-color);
+}
+
+.split.three .btn:hover {
+    background-color: var(--three-btn-hover-color);
+    border-color: var(--three-btn-hover-color);
+}
+
+.split.four .btn:hover {
+    background-color: var(--four-btn-hover-color);
+    border-color: var(--four-btn-hover-color);
+}
+
+.split.five .btn:hover {
+    background-color: var(--five-btn-hover-color);
+    border-color: var(--five-btn-hover-color);
+}
+
+.split.one{
+    background: url('../MEDIA/Unidad1.jpg') var(--one-bg-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.split.two{
+    background: url('../MEDIA/jeje2.jpg') var(--two-bg-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.split.three{
+    background: url('../MEDIA/jeje3.jpg') var(--three-bg-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.split.four{
+    background: url('../MEDIA/jeje4.jpg') var(--four-bg-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.split.five{
+    background: url('../MEDIA/jasjja.jpg') var(--five-bg-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
